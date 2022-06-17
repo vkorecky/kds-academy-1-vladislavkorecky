@@ -1,0 +1,1 @@
+Keboola academy - Developer Certificate - Assignment Part 1
