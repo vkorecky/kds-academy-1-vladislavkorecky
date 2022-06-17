@@ -11,11 +11,11 @@ from keboola.component.exceptions import UserException
 
 # configuration variables
 KEY_API_TOKEN = '#api_token'
-KEY_PRINT_HELLO = 'print_hello'
+KEY_PRINT_ROWS = 'print_rows'
 
 # list of mandatory parameters => if some is missing,
 # component will fail with readable message on initialization.
-REQUIRED_PARAMETERS = [KEY_PRINT_HELLO]
+REQUIRED_PARAMETERS = [KEY_PRINT_ROWS]
 REQUIRED_IMAGE_PARS = []
 
 
@@ -44,7 +44,7 @@ class Component(ComponentBase):
         self.validate_image_parameters(REQUIRED_IMAGE_PARS)
         params = self.configuration.parameters
         # Access parameters in data/config.json
-        if params.get(KEY_PRINT_HELLO):
+        if params.get(KEY_PRINT_ROWS):
             logging.info("Hello World")
 
         # get last state data/in/state.json from previous run
