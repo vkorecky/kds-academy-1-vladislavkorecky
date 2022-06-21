@@ -2,12 +2,12 @@
   "type": "object",
   "title": "extractor configuration",
   "required": [
-    "print_hello"
+    "print_rows"
   ],
   "properties": {
-    "print_hello": {
+    "print_rows": {
       "type": "boolean",
-      "title": "Print Hello"
+      "title": "Print Rows"
     },
     "debug": {
       "type": "boolean",
